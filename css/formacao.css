@@ -26,7 +26,8 @@
 
 .formacao .subtitulo {
     color: #000000;
-    max-width: 4ch;
+    max-width: 6ch;
+    font-family: "Playfair Display", Arial, sans-serif ;
 }
 
 .formacao-texto {

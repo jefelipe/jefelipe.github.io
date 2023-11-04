@@ -13,6 +13,7 @@
     line-height: 1.125;
     margin-bottom: 30px;
     position: relative;
+    font-family: "Playfair Display", Arial, sans-serif;
 }
 
 .introducao h1::before {
