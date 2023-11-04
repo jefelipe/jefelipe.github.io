@@ -1,0 +1,112 @@
+.experiencia {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.experiencia .subtitulo {
+    color: #E0E0E0;
+}
+
+.experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 43ch;
+    margin-bottom: 60px;
+    color: #525252;
+}
+
+.experiencia-texto strong {
+    color: #141414;
+}
+
+.projeto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-right: 4px;
+    position: relative;
+}
+
+.projeto::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#D6AE73, #A26044);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.projeto-ano {
+    position: absolute;
+    top: 22px;
+    width: 80px;
+    text-align: right;
+    left: -100px;
+    color: #525252;
+    font-size: 0.875rem;
+}
+
+.projeto-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.projeto-texto {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+}
+
+.projeto-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.projeto-habilidades li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #ffffff;
+    padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia .subtitulo {
+        color: #141414;
+    }
+    .experiencia-texto{
+        font-size: 1.25rem;
+    }
+    .projeto-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+    .projeto-ano::before {
+        content: "Ano: ";
+    }
+}
+
+@media (max-width:400px){
+    .projeto{
+        grid-template-columns: 1fr;
+    }
+}
